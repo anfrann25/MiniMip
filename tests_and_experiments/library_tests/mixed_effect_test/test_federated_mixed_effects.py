@@ -27,8 +27,9 @@ class Test_FederatedMixedEffect(FederationTestTemplate):
     def compare(self, federated_output, global_output):
         sxx,syy = federated_output
         sxx_gl, syy_gl = global_output
-        print(syy - syy_gl)
-        print(sxx - sxx_gl)
+        print(syy)
+        print(syy_gl)
+        # print(sxx - sxx_gl)
 
 
 

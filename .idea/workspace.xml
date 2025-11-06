@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67cd7056-33f2-4eb5-90c7-58a233b20f5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/library/under_development/mixed_effects/federated_mixed_effect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test/client1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test/client2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test/server_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test/test_federated_mixed_effects.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/feres_analysis/CDEsMetadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/pearson_correlation/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/under_development/mixed_effects/mixed_effect.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/under_development/mixed_effects/centralized_mixed_effect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/k_means/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/k_means/client1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/k_means/client1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/k_means/client2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/k_means/client2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/k_means/client3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/k_means/client3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/k_means/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/k_means/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/logistic_regression/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/k_means/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/logistic_regression/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/logistic_regression/client1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/logistic_regression/client2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/logistic_regression/client3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/logistic_regression/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/pearson_correlation/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/pearson_correlation/client1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/pearson_correlation/client1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/pearson_correlation/client2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/pearson_correlation/client2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/pearson_correlation/client3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/pearson_correlation/client3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/pearson_correlation/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/pearson_correlation/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test/test_federated_mixed_effects.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test/test_federated_mixed_effects.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +112,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "MiniMip",
-    "last_opened_file_path": "D:/Coding/MiniMip_Grizzly/tests_and_experiments/library_tests",
+    "last_opened_file_path": "D:/Coding/MiniMip_Grizzly/data/feres_analysis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -125,30 +138,7 @@
       <recent name="D:\Coding\MiniMip_Grizzly\tests_and_experiments" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.client2 (1)">
-    <configuration name="centralized_mixed_effect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MiniMip" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/library/under_development/mixed_effects" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Coding\MiniMip_Grizzly\library\under_development\mixed_effects\centralized_mixed_effect.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.client2">
     <configuration name="client1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MiniMip" />
       <option name="ENV_FILES" value="" />
@@ -164,6 +154,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test/client1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="client1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MiniMip" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/library_tests/grizzly_pearson" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/library_tests/grizzly_pearson/client1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,7 +208,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="server_start (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="client2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MiniMip" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -204,12 +217,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/library_tests/grizzly_pearson" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test/server_start.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/library_tests/grizzly_pearson/client2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -218,31 +231,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_federated_mixed_effects.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="server_start" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MiniMip" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/library_tests/grizzly_pearson" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test/test_federated_mixed_effects.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/library_tests/grizzly_pearson/server_start.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.client2" />
+        <item itemvalue="Python.client1" />
+        <item itemvalue="Python.server_start" />
         <item itemvalue="Python.client2 (1)" />
         <item itemvalue="Python.client1 (1)" />
-        <item itemvalue="Python.server_start (1)" />
-        <item itemvalue="Python tests.pytest in test_federated_mixed_effects.py" />
-        <item itemvalue="Python.centralized_mixed_effect" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +340,16 @@
       <workItem from="1761203527632" duration="3960000" />
       <workItem from="1761544938414" duration="248000" />
       <workItem from="1761556298563" duration="3725000" />
-      <workItem from="1761560382919" duration="7315000" />
+      <workItem from="1761560382919" duration="9589000" />
+      <workItem from="1761727536127" duration="2630000" />
+      <workItem from="1761847768690" duration="4000" />
+      <workItem from="1761847861496" duration="1000" />
+      <workItem from="1762022111168" duration="5000" />
+      <workItem from="1762069734420" duration="3000" />
+      <workItem from="1762251839044" duration="275000" />
+      <workItem from="1762273283929" duration="2922000" />
+      <workItem from="1762365304003" duration="4000" />
+      <workItem from="1762426287264" duration="361000" />
     </task>
     <servers />
   </component>
@@ -362,12 +389,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MiniMip_Grizzly$grizzly_table_creator.coverage" NAME="grizzly_table_creator Coverage Results" MODIFIED="1754227380382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/test_template" />
-    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$client2.coverage" NAME="client2 Coverage Results" MODIFIED="1761144114839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/mann_whittney_u" />
+    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$client2.coverage" NAME="client2 Coverage Results" MODIFIED="1762273991868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/grizzly_pearson" />
     <SUITE FILE_PATH="coverage/MiniMip$pepy.coverage" NAME="pepy Coverage Results" MODIFIED="1754009194015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/MiniMip_Grizzly$k_means__1_.coverage" NAME="k_means (1) Coverage Results" MODIFIED="1757504744089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/library_tests/grizzly__k_means" />
     <SUITE FILE_PATH="coverage/FederatedAggregator$client1.coverage" NAME="client1 Coverage Results" MODIFIED="1753956924988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/k_means" />
-    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$server_start.coverage" NAME="server_start Coverage Results" MODIFIED="1761144106669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/mann_whittney_u" />
-    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$client1__1_.coverage" NAME="client1 (1) Coverage Results" MODIFIED="1761567715695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test" />
+    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$server_start.coverage" NAME="server_start Coverage Results" MODIFIED="1762273983258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/grizzly_pearson" />
+    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$client1__1_.coverage" NAME="client1 (1) Coverage Results" MODIFIED="1761733815964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test" />
     <SUITE FILE_PATH="coverage/MiniMip_Grizzly$server.coverage" NAME="server Coverage Results" MODIFIED="1761046928751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/group_comparisons" />
     <SUITE FILE_PATH="coverage/MiniMip_Grizzly$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1761043894375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/k_means" />
     <SUITE FILE_PATH="coverage/MiniMip_Grizzly$t_test_test.coverage" NAME="t_test_test Coverage Results" MODIFIED="1761220898841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/t_test" />
@@ -388,7 +415,7 @@
     <SUITE FILE_PATH="coverage/FederatedAggregator$client2a_all.coverage" NAME="client2a_all Coverage Results" MODIFIED="1753942797353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/library_tests" />
     <SUITE FILE_PATH="coverage/MiniMip$lalalal.coverage" NAME="lalalal Coverage Results" MODIFIED="1754002087136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_mip_system/_grpc" />
     <SUITE FILE_PATH="coverage/MiniMip$client1__1_.coverage" NAME="client1 (1) Coverage Results" MODIFIED="1754016599440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/k_means" />
-    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$server_start__1_.coverage" NAME="server_start (1) Coverage Results" MODIFIED="1761567713815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test" />
+    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$server_start__1_.coverage" NAME="server_start (1) Coverage Results" MODIFIED="1761733812919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test" />
     <SUITE FILE_PATH="coverage/MiniMip_Grizzly$client2a_all.coverage" NAME="client2a_all Coverage Results" MODIFIED="1758615013770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/library_tests" />
     <SUITE FILE_PATH="coverage/MiniMip_Grizzly$client3.coverage" NAME="client3 Coverage Results" MODIFIED="1761043902113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/k_means" />
     <SUITE FILE_PATH="coverage/MiniMip$server.coverage" NAME="server Coverage Results" MODIFIED="1754016933634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/k_means" />
@@ -410,7 +437,7 @@
     <SUITE FILE_PATH="coverage/MiniMip_Grizzly$mann_whittney_test.coverage" NAME="mann_whittney_test Coverage Results" MODIFIED="1761140005915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/mann_whittney_u" />
     <SUITE FILE_PATH="coverage/MiniMip_Grizzly$mann_whittney_utest__1_.coverage" NAME="mann_whittney_utest (1) Coverage Results" MODIFIED="1761139474924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/library/under_development/mann_whittney" />
     <SUITE FILE_PATH="coverage/MiniMip$export_datasets.coverage" NAME="export_datasets Coverage Results" MODIFIED="1753965610613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments" />
-    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$client2__1_.coverage" NAME="client2 (1) Coverage Results" MODIFIED="1761567717561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test" />
+    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$client2__1_.coverage" NAME="client2 (1) Coverage Results" MODIFIED="1761733818103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/mixed_effect_test" />
     <SUITE FILE_PATH="coverage/MiniMip$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1754000327297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/k_means" />
     <SUITE FILE_PATH="coverage/MiniMip$client1.coverage" NAME="client1 Coverage Results" MODIFIED="1754016936814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/k_means" />
     <SUITE FILE_PATH="coverage/FederatedAggregator$grpc_agg_server.coverage" NAME="grpc_agg_server Coverage Results" MODIFIED="1753942787558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/system/server" />
@@ -438,6 +465,6 @@
     <SUITE FILE_PATH="coverage/FederatedAggregator$server.coverage" NAME="server Coverage Results" MODIFIED="1753956921462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/k_means" />
     <SUITE FILE_PATH="coverage/MiniMip_Grizzly$k_means_rand.coverage" NAME="k_means_rand Coverage Results" MODIFIED="1757924840575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/library/stats" />
     <SUITE FILE_PATH="coverage/MiniMip_Grizzly$server_start__2_.coverage" NAME="server_start (2) Coverage Results" MODIFIED="1761047861296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/k_means_rand_Pandas" />
-    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$client1.coverage" NAME="client1 Coverage Results" MODIFIED="1761144112279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/mann_whittney_u" />
+    <SUITE FILE_PATH="coverage/MiniMip_Grizzly$client1.coverage" NAME="client1 Coverage Results" MODIFIED="1762273989707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests_and_experiments/library_tests/grizzly_pearson" />
   </component>
 </project>

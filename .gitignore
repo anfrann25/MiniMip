@@ -36,3 +36,4 @@ mini_mip_system/install.sh
 data/grizzly_tests/BlobDataset/250x2_client0.duckdb.wal
 *.wal
 .idea/workspace.xml
+data/feres_analysis/CDEsMetadata.json
