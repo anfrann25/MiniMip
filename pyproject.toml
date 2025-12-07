@@ -2,7 +2,6 @@
 name = "pythonProject"
 version = "0.1.0"
 description = ""
-authors = ["thoubou <thoubou@gmail.com>"]
 readme = "README.md"
 packages = [
     { include = "mini_mip_system" },  # Add your project folder here

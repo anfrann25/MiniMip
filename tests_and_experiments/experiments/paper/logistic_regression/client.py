@@ -1,7 +1,6 @@
 from sklearn.datasets import make_classification
 
-from library.under_development.stat_models import \
-    FederatedLogisticRegressionClientSaSo
+from library.under_development.stat_models.logistic_regression_saga_solver import FederatedLogisticRegressionClientSaSo
 from mini_mip_system.client.grpc_agg_client import GRPCClient
 from server import available_clients
 import time
@@ -14,6 +13,7 @@ def start_client(*,aggregation_server="localhost:50051",client_id):
     client: GRPCClient = GRPCClient(client_id, available_clients, operation_id=0, aggregation_server=aggregation_server)
     # Creating the federated and the centralized versions of the same dataset
     model:FederatedLogisticRegressionClientSaSo = FederatedLogisticRegressionClientSaSo(client)
+    print("ti eides?")
     # Timing starts
     start_time = time.time()
     model.fit(x, y, num_epochs=200)
@@ -21,4 +21,4 @@ def start_client(*,aggregation_server="localhost:50051",client_id):
     end_time = time.time()
     # Calculate elapsed time in milliseconds
     elapsed_time_ms = (end_time - start_time) * 1000
-    print(elapsed_time_ms)
+    print("Time: ", elapsed_time_ms)
