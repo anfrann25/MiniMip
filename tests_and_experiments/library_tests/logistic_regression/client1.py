@@ -9,3 +9,4 @@ LogisticRegressionTest(0, 2,
                            features=['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)'],
                            target='target',
                            operation_id=3)
+

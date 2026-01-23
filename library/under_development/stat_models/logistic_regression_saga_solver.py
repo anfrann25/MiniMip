@@ -6,6 +6,7 @@ from library.utils.numpy_aggregator import NumpyAggregator
 from mini_mip_system.client.grpc_agg_client import AggregationClientInterface
 
 
+
 class FederatedLogisticRegressionClientSaSo(StatisticalModel):
 
     def __init__(self, client: AggregationClientInterface, model_params=None):

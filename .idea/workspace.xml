@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67cd7056-33f2-4eb5-90c7-58a233b20f5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/library/utils/decorator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MiniMip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MiniMip.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/under_development/stat_models/federated_logreg_cached.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/AutomateTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/clients.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/under_development/stat_models/logistic_regression_saga_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/under_development/stat_models/logistic_regression_saga_solver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/library_tests/logistic_regression/client1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/library_tests/logistic_regression/client1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,76 +53,79 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.pytest in test_federated_mixed_effects.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.FindRoot.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Mann-Whittney-UTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.___federated_aggregation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aggregation_server.executor&quot;: &quot;Run&quot;,
-    &quot;Python.chisquared_fisher_test.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.client.executor&quot;: &quot;Run&quot;,
-    &quot;Python.client1 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.client1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.client1_kmeans.executor&quot;: &quot;Run&quot;,
-    &quot;Python.client1a_all.executor&quot;: &quot;Run&quot;,
-    &quot;Python.client2 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.client2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.client2_kmeans.executor&quot;: &quot;Run&quot;,
-    &quot;Python.client2a_all.executor&quot;: &quot;Run&quot;,
-    &quot;Python.client3 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.client3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.db_setup (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.db_setup.executor&quot;: &quot;Run&quot;,
-    &quot;Python.decorator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.deep_seek.executor&quot;: &quot;Run&quot;,
-    &quot;Python.export_datasets.executor&quot;: &quot;Run&quot;,
-    &quot;Python.frame.executor&quot;: &quot;Run&quot;,
-    &quot;Python.grizzly_table_creator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.grizzly_table_factory (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.grizzly_table_factory.executor&quot;: &quot;Run&quot;,
-    &quot;Python.grpc_agg_client.executor&quot;: &quot;Run&quot;,
-    &quot;Python.grpc_agg_server.executor&quot;: &quot;Run&quot;,
-    &quot;Python.k_means.executor&quot;: &quot;Run&quot;,
-    &quot;Python.k_means_rand.executor&quot;: &quot;Run&quot;,
-    &quot;Python.kmeans_test_pandas.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lala.executor&quot;: &quot;Run&quot;,
-    &quot;Python.logistic_regression_saga_solver.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mann_w3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mann_whittney_test.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.mann_whittney_utest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.mann_whittney_utest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mixed_effect.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.numpy_aggregator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pearson_test (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.pearson_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.server (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.server.executor&quot;: &quot;Run&quot;,
-    &quot;Python.server_start (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.server_start (2).executor&quot;: &quot;Run&quot;,
-    &quot;Python.server_start.executor&quot;: &quot;Run&quot;,
-    &quot;Python.setup.executor&quot;: &quot;Run&quot;,
-    &quot;Python.skata re file gamw.executor&quot;: &quot;Run&quot;,
-    &quot;Python.smd_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.time_grizzly_pandas.executor&quot;: &quot;Run&quot;,
-    &quot;Python.titanic_as_disease.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;MiniMip&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Coding/MiniMip_Grizzly/data/feres_analysis&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.pytest in test_federated_mixed_effects.py.executor": "Run",
+    "Python.AutomateTest.executor": "Run",
+    "Python.FindRoot.executor": "Run",
+    "Python.Mann-Whittney-UTest.executor": "Run",
+    "Python.___federated_aggregation.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.aggregation_server.executor": "Run",
+    "Python.chisquared_fisher_test.executor": "Debug",
+    "Python.client.executor": "Run",
+    "Python.client1 (1).executor": "Run",
+    "Python.client1.executor": "Run",
+    "Python.client1_kmeans.executor": "Run",
+    "Python.client1a_all.executor": "Run",
+    "Python.client2 (1).executor": "Run",
+    "Python.client2.executor": "Run",
+    "Python.client2_kmeans.executor": "Run",
+    "Python.client2a_all.executor": "Run",
+    "Python.client3 (1).executor": "Run",
+    "Python.client3.executor": "Run",
+    "Python.clients.executor": "Run",
+    "Python.db_setup (1).executor": "Run",
+    "Python.db_setup.executor": "Run",
+    "Python.decorator.executor": "Run",
+    "Python.deep_seek.executor": "Run",
+    "Python.export_datasets.executor": "Run",
+    "Python.federated_logreg_cached.executor": "Run",
+    "Python.frame.executor": "Run",
+    "Python.grizzly_table_creator.executor": "Run",
+    "Python.grizzly_table_factory (1).executor": "Run",
+    "Python.grizzly_table_factory.executor": "Run",
+    "Python.grpc_agg_client.executor": "Run",
+    "Python.grpc_agg_server.executor": "Run",
+    "Python.k_means.executor": "Run",
+    "Python.k_means_rand.executor": "Run",
+    "Python.kmeans_test_pandas.executor": "Run",
+    "Python.lala.executor": "Run",
+    "Python.logistic_regression_saga_solver.executor": "Run",
+    "Python.mann_w3.executor": "Run",
+    "Python.mann_whittney_test.executor": "Debug",
+    "Python.mann_whittney_utest (1).executor": "Run",
+    "Python.mann_whittney_utest.executor": "Run",
+    "Python.mixed_effect.executor": "Debug",
+    "Python.numpy_aggregator.executor": "Run",
+    "Python.pearson_test (1).executor": "Run",
+    "Python.pearson_test.executor": "Run",
+    "Python.server (1).executor": "Run",
+    "Python.server.executor": "Run",
+    "Python.server_start (1).executor": "Run",
+    "Python.server_start (2).executor": "Run",
+    "Python.server_start.executor": "Run",
+    "Python.setup.executor": "Run",
+    "Python.skata re file gamw.executor": "Run",
+    "Python.smd_test.executor": "Run",
+    "Python.t_test.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.time_grizzly_pandas.executor": "Run",
+    "Python.titanic_as_disease.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "MiniMip",
+    "last_opened_file_path": "D:/Coding/MiniMip_Grizzly/data/feres_analysis",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Coding\MiniMip_Grizzly\tests_and_experiments\library_tests" />
@@ -137,8 +142,8 @@
       <recent name="D:\Coding\MiniMip_Grizzly\tests_and_experiments" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.client3">
-    <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.AutomateTest">
+    <configuration name="AutomateTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MiniMip" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,31 +156,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="client1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MiniMip" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/AutomateTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,7 +178,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -220,8 +200,29 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="clients" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MiniMip" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/clients.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -243,7 +244,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -255,18 +255,17 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AutomateTest" />
+        <item itemvalue="Python.server" />
+        <item itemvalue="Python.clients" />
         <item itemvalue="Python.client3" />
         <item itemvalue="Python.client2" />
-        <item itemvalue="Python.client1" />
-        <item itemvalue="Python.server" />
-        <item itemvalue="Python.client" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.27397.106" />
         <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
       </set>
     </attachedChunks>
@@ -353,7 +352,8 @@
       <workItem from="1762538240727" duration="9266000" />
       <workItem from="1763137824068" duration="1585000" />
       <workItem from="1763399692089" duration="9283000" />
-      <workItem from="1763929156640" duration="4138000" />
+      <workItem from="1763929156640" duration="4440000" />
+      <workItem from="1765304189793" duration="7000" />
     </task>
     <servers />
   </component>
@@ -365,7 +365,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/MiniMip" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
