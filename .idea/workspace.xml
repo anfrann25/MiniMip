@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67cd7056-33f2-4eb5-90c7-58a233b20f5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/library/under_development/stat_models/federated_logreg_cached.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/AutomateTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/clients.py" afterDir="false" />
+    <list default="true" id="67cd7056-33f2-4eb5-90c7-58a233b20f5c" name="Changes" comment="A lot of things!">
+      <change afterPath="$PROJECT_DIR$/library/under_development/stat_models/federated_cachedStatistical.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/datasets/LungCancer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/datasets/smoking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/datasets/water.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/clients.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/under_development/stat_models/federated_logreg_cached.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/under_development/stat_models/federated_logreg_cached.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/under_development/stat_models/logistic_regression_saga_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/under_development/stat_models/logistic_regression_saga_solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/library_tests/logistic_regression/client1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/library_tests/logistic_regression/client1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/AutomateTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/AutomateTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +47,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;anfrann25&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/anfrann25/MiniMip&quot;,
+    &quot;accountId&quot;: &quot;8d99494d-9740-4b58-ab46-24d680d517dd&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -58,6 +75,7 @@
     "Python tests.pytest in test_federated_mixed_effects.py.executor": "Run",
     "Python.AutomateTest.executor": "Run",
     "Python.FindRoot.executor": "Run",
+    "Python.LungCancer.executor": "Run",
     "Python.Mann-Whittney-UTest.executor": "Run",
     "Python.___federated_aggregation.executor": "Run",
     "Python.__init__.executor": "Run",
@@ -108,15 +126,17 @@
     "Python.setup.executor": "Run",
     "Python.skata re file gamw.executor": "Run",
     "Python.smd_test.executor": "Run",
+    "Python.smoking.executor": "Run",
     "Python.t_test.executor": "Run",
     "Python.test.executor": "Run",
     "Python.time_grizzly_pandas.executor": "Run",
     "Python.titanic_as_disease.executor": "Run",
+    "Python.water.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "MiniMip",
-    "last_opened_file_path": "D:/Coding/MiniMip_Grizzly/data/feres_analysis",
+    "last_opened_file_path": "C:/Users/anfra/Desktop/Πτυχιακή/MiniMip/tests_and_experiments/experiments/paper/statistical_models",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -128,18 +148,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anfra\Desktop\Πτυχιακή\MiniMip\tests_and_experiments\experiments\paper\statistical_models" />
       <recent name="D:\Coding\MiniMip_Grizzly\tests_and_experiments\library_tests" />
       <recent name="D:\Coding\MiniMip_Grizzly\tests_and_experiments\library_tests\pandas_covariance" />
       <recent name="D:\Coding\MiniMip_Grizzly\tests_and_experiments\library_tests\median" />
       <recent name="D:\Coding\MiniMip_Grizzly\tests_and_experiments\library_tests\ordinal_logistic_regression" />
-      <recent name="D:\Coding\MiniMip_Grizzly\tests_and_experiments\library_tests\multivariable_regression" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anfra\Desktop\Πτυχιακή\MiniMip\library\under_development\stat_models" />
       <recent name="D:\Coding\MiniMip_Grizzly\library\under_development\mann_whittney" />
       <recent name="D:\Coding\MiniMip_Grizzly\library\under_development" />
       <recent name="D:\Coding\MiniMip_Grizzly\tests_and_experiments\core" />
       <recent name="D:\Coding\MiniMip_Grizzly\mini_mip_system" />
-      <recent name="D:\Coding\MiniMip_Grizzly\tests_and_experiments" />
     </key>
   </component>
   <component name="RunManager" selected="Python.AutomateTest">
@@ -165,7 +185,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="client2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="LungCancer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MiniMip" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,55 +194,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/datasets" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="client3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MiniMip" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/client3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="clients" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MiniMip" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/clients.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/datasets/LungCancer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,13 +229,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="smoking" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MiniMip" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/datasets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/datasets/smoking.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="water" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MiniMip" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_and_experiments/datasets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_and_experiments/datasets/water.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.AutomateTest" />
+        <item itemvalue="Python.LungCancer" />
+        <item itemvalue="Python.water" />
+        <item itemvalue="Python.smoking" />
         <item itemvalue="Python.server" />
-        <item itemvalue="Python.clients" />
-        <item itemvalue="Python.client3" />
-        <item itemvalue="Python.client2" />
       </list>
     </recent_temporary>
   </component>
@@ -355,6 +375,15 @@
       <workItem from="1763929156640" duration="4440000" />
       <workItem from="1765304189793" duration="7000" />
     </task>
+    <task id="LOCAL-00001" summary="A lot of things!">
+      <option name="closed" value="true" />
+      <created>1769203684661</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769203684661</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,6 +411,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="A lot of things!" />
+    <option name="LAST_COMMIT_MESSAGE" value="A lot of things!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
