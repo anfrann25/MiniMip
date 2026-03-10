@@ -18,7 +18,7 @@ from server import available_clients
 
 # Import custom datasets
 from tests_and_experiments.datasets import iris as iris_data
-from tests_and_experiments.datasets import   heart_disease as heartd_data
+from tests_and_experiments.datasets import heart_disease as heartd_data
 from tests_and_experiments.datasets import smoking as smoking_data
 from tests_and_experiments.datasets import water as water_data
 from tests_and_experiments.datasets import LungCancer as lungcancer_data
@@ -38,9 +38,66 @@ saso_acc = {
     "SaSo_client_2": [],
     "SaSo_client_3": []
 }
+# -------------------------------
+# Plot final test accuracy
+# -------------------------------
+def plot_final_accuracy(saso_final, cached_final, save_path = None):
+
+    mean_saso = np.mean(list(saso_final.values()))
+    mean_cached = np.mean(list(cached_final.values()))
+
+    models = ['SaSo', 'Cached']
+    mean_acc = [mean_saso, mean_cached]
+    colors = ['skyblue', 'salmon']
+
+    fig, ax = plt.subplots(figsize=(6,4))
+    bars = ax.bar(models, mean_acc, color=colors)
+
+    for bar in bars:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2,
+                height + 0.005,
+                f"{height:.4f}",
+                ha='center')
+
+    ax.set_ylabel("Final Test Accuracy")
+    ax.set_title("Final Accuracy Comparison")
+
+    plt.tight_layout()
+    if save_path:
+        plt.savefig(save_path)
+        plt.close()
+    else:
+        plt.show()
 
 
-def plot_average_execution(saso_results, cached_results):
+# -------------------------------
+# Accuracy comparison per epoch
+# -------------------------------
+def plot_accuracy_comparison(saso_hist, cached_hist, save_path = None):
+
+    plt.figure(figsize=(10,6))
+
+    saso_mean = np.mean(np.array(list(saso_hist.values())), axis=0)
+    cached_mean = np.mean(np.array(list(cached_hist.values())), axis=0)
+
+    plt.plot(saso_mean, label="SaSo", linewidth=2)
+    plt.plot(cached_mean, label="Cached", linewidth=2)
+
+    plt.xlabel("Epoch")
+    plt.ylabel("Accuracy")
+    plt.title("Accuracy per Epoch Comparison")
+
+    plt.legend()
+    plt.grid(True)
+    if save_path:
+        plt.savefig(save_path)
+        plt.close()
+    else:
+        plt.show()
+
+
+def plot_average_execution(saso_results, cached_results, save_path = None):
     # -------------------------------
     # Plot average execution time
     # -------------------------------
@@ -59,7 +116,11 @@ def plot_average_execution(saso_results, cached_results):
     ax.set_ylabel("Average execution time (ms)")
     ax.set_title("Average execution time per model")
     plt.tight_layout()
-    plt.show()
+    if save_path:
+        plt.savefig(save_path)
+        plt.close()
+    else:
+        plt.show()
 
     return
 
@@ -67,7 +128,7 @@ def plot_average_execution(saso_results, cached_results):
     # -------------------------------
     # Plot average accuracy
     # -------------------------------
-def plot_average_accuracy(saso_acc, cached_acc):
+def plot_average_accuracy(saso_acc, cached_acc, save_path = None):
     mean_saso_acc = np.mean(list(saso_acc.values()))
     mean_cached_acc = np.mean(list(cached_acc.values()))
 
@@ -83,14 +144,18 @@ def plot_average_accuracy(saso_acc, cached_acc):
     ax.set_ylabel("Average Test Accuracy")
     ax.set_title("Average Accuracy per Model")
     plt.tight_layout()
-    plt.show()
+    if save_path:
+        plt.savefig(save_path)
+        plt.close()
+    else:
+        plt.show()
 
     return
 
     # -------------------------------
     # Line plot Accuracy per Epoch
     # -------------------------------
-def plot_accuracy_per_epoch(cached_acc):
+def plot_accuracy_per_epoch(cached_acc, save_path = None):
     plt.figure(figsize=(10, 6))
 
     for cid in [1, 2, 3]:
@@ -107,13 +172,20 @@ def plot_accuracy_per_epoch(cached_acc):
     plt.title("Accuracy per Epoch (Cached Federated Logistic Regression)")
     plt.legend()
     plt.grid(True)
-    plt.show()
+    if save_path:
+        plt.savefig(save_path)
+        plt.close()
+    else:
+        plt.show()
 
     return
 
 #Define plots kai dataset
+import os
 DO_PLOTS = True     # ή False
-DATASET = "water"
+DATASET = "lung"
+SAVE_DIR = "experiment_results/" + DATASET
+os.makedirs(SAVE_DIR, exist_ok=True)
 
 
 def load_dataset(name):
@@ -195,7 +267,10 @@ def load_dataset(name):
 # -------------------------------
 # Client function
 # -------------------------------
-def run_client(model_type, client_id, x_train, y_train, x_test, y_test, results_dict, acc_dict, aggregation_server="localhost:50051"):
+def run_client(model_type, client_id, x_train, y_train, x_test, y_test,
+               results_dict, history_dict, final_acc_dict,
+               aggregation_server="localhost:50051"):
+
     client = GRPCClient(
         client_id,
         available_clients,
@@ -211,20 +286,24 @@ def run_client(model_type, client_id, x_train, y_train, x_test, y_test, results_
         raise ValueError("Unknown model type")
 
     start_time = time.time()
+
     model.fit(x_train, y_train, num_epochs=100, X_val=x_test, y_val=y_test)
+
     end_time = time.time()
 
     elapsed_ms = (end_time - start_time) * 1000
-    print(f"[Client {client_id} - {model_type}] Time: {elapsed_ms:.2f} ms")
+
     results_dict[f"{model_type}_client_{client_id}"] = elapsed_ms
-    acc_dict[f"{model_type}_client_{client_id}"] = model.accuracy_history
 
+    history_dict[f"{model_type}_client_{client_id}"] = model.accuracy_history
 
-    # Compute accuracy
     preds = model.predict(x_test)
     acc = accuracy_score(y_test, preds)
+
+    final_acc_dict[f"{model_type}_client_{client_id}"] = acc
+
+    print(f"[Client {client_id} - {model_type}] Time: {elapsed_ms:.2f} ms")
     print(f"[Client {client_id} - {model_type}] Test Accuracy: {acc:.4f}")
-    acc_dict[f"{model_type}_client_{client_id}"] = model.accuracy_history
 
 
 # -------------------------------
@@ -239,27 +318,33 @@ def start_server(available_clients):
 # Function to run a model group - run saso or cached
 # -------------------------------
 def run_model_group(model_type, client_ids, x_test, y_test):
-    manager = Manager()
-    results = manager.dict()
-    accuracies = manager.dict()
 
-    # Start server
+    manager = Manager()
+
+    results = manager.dict()
+    histories = manager.dict()
+    final_acc = manager.dict()
+
     server_process = Process(target=start_server, args=(available_clients,))
     server_process.start()
-    time.sleep(2)  # wait for server to be ready
+    time.sleep(2)
 
-    # Start clients
     processes = []
+
     for cid in client_ids:
+
         p = Process(target=run_client, args=(
+
             model_type,
             cid,
-            X_splits[cid - 1],  # train split per client
+            X_splits[cid - 1],
             y_splits[cid - 1],
-            X_test,  # shared test set
+            X_test,
             y_test,
             results,
-            accuracies
+            histories,
+            final_acc
+
         ))
 
         p.start()
@@ -270,9 +355,10 @@ def run_model_group(model_type, client_ids, x_test, y_test):
 
     server_process.terminate()
     server_process.join()
+
     print(f"{model_type} server stopped.\n")
 
-    return dict(results), dict(accuracies)
+    return dict(results), dict(histories), dict(final_acc)
 
 # split datasets gia accuracy
 from sklearn.model_selection import StratifiedKFold
@@ -292,32 +378,39 @@ if __name__ == "__main__":
 
     X, y = load_dataset(DATASET)
 
-    # Train/test split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    X_splits, y_splits = stratified_split(X, y, num_clients=3)
+    # σωστό train/test split
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42
+    )
+
+    # split ΜΟΝΟ του training set
+    X_splits, y_splits = stratified_split(X_train, y_train, num_clients=3)
 
     client_ids = [1, 2, 3]
 
-    # -------------------------------
-    # Run SaSo clients
-    # -------------------------------
     print("=== Running SaSo clients ===")
-    saso_results, saso_acc = run_model_group("SaSo", client_ids, X_test, y_test)
-    print("SaSo results:", saso_results)
-    print("SaSo accuracy:", saso_acc, "\n")
 
-    # -------------------------------
-    # Run Cached clients
-    # -------------------------------
+    saso_results, saso_hist, saso_final = run_model_group(
+        "SaSo", client_ids, X_test, y_test
+    )
+
     print("=== Running Cached clients ===")
-    cached_results, cached_acc = run_model_group("Cached", client_ids, X_test, y_test)
-    print("Cached results:", cached_results)
-    print("Cached accuracy:", cached_acc, "\n")
+
+    cached_results, cached_hist, cached_final = run_model_group(
+        "Cached", client_ids, X_test, y_test
+    )
+
+    print("SaSo final accuracy:", saso_final)
+    print("Cached final accuracy:", cached_final)
 
     if DO_PLOTS:
-        plot_average_execution(saso_results, cached_results)
-        plot_average_accuracy(saso_acc, cached_acc)
-        plot_accuracy_per_epoch(cached_acc)
+        plot_average_execution(saso_results, cached_results, save_path=os.path.join(f"{SAVE_DIR}/execution_time.jpg"))
+
+        plot_final_accuracy(saso_final, cached_final, save_path= os.path.join(f"{SAVE_DIR}/final_accuracy.jpg"))
+
+        plot_accuracy_comparison(saso_hist, cached_hist, save_path= os.path.join(f"{SAVE_DIR}/accuracy_comparison.jpg"))
+
+        plot_accuracy_per_epoch(cached_hist, save_path= os.path.join(f"{SAVE_DIR}/accuracy_per_epoch.jpg"))
 
 
 

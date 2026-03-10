@@ -21,8 +21,12 @@ class FederatedLogisticRegressionClientCached(StatisticalModel):
         mix_local=0.7,              # πόσο κρατάς local
         mix_cached=0.3,             # πόσο τραβάς προς cached global
         model_params=None
+
     ):
         super().__init__(client)
+        self.did_aggregate_history = []
+        self.aggregate_count = 0
+        self.skip_count = 0
         self.agg = NumpyAggregator(self.client)
 
         self.aggregation_interval = aggregation_interval
@@ -112,7 +116,7 @@ class FederatedLogisticRegressionClientCached(StatisticalModel):
     def fit(self, X, y, num_epochs=100, X_val=None, y_val=None):
         for _ in range(num_epochs):
             self.round_counter += 1
-            print(f"[Client Sancus-like] Epoch {self.round_counter}/{num_epochs}")
+            print(f"[Client fedChSa-like] Epoch {self.round_counter}/{num_epochs}")
 
             # save previous for variation-gap measurement
             if hasattr(self.model, "coef_"):
@@ -122,6 +126,7 @@ class FederatedLogisticRegressionClientCached(StatisticalModel):
             # 1) local update
             self._local_update(X, y)
 
+            did_aggregate = False
             # 2) staleness-aware skip-broadcast
             if self._should_aggregate():
                 global_coef = self.agg.fed_weighted_avg(self.model.coef_, X.shape[0])
@@ -131,8 +136,16 @@ class FederatedLogisticRegressionClientCached(StatisticalModel):
                 self._update_cache(global_coef, global_intercept)
                 self.model.coef_ = global_coef.copy()
                 self.model.intercept_ = global_intercept.copy()
+                did_aggregate = True
             else:
                 self._mix_with_cached()
+
+            self.did_aggregate_history.append(did_aggregate)
+
+            if did_aggregate:
+                self.aggregate_count += 1
+            else:
+                self.skip_count += 1
 
             # optional fallback: ensure periodic aggregation
             # (π.χ. για να μη “κολλήσει”)
