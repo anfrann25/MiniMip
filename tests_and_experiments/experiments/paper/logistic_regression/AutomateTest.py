@@ -22,6 +22,7 @@ from tests_and_experiments.datasets import heart_disease as heartd_data
 from tests_and_experiments.datasets import smoking as smoking_data
 from tests_and_experiments.datasets import water as water_data
 from tests_and_experiments.datasets import LungCancer as lungcancer_data
+from tests_and_experiments.datasets import csec_iot as ics3d_data
 # -------------------------------
 # Ignore convergence warnings
 # -------------------------------
@@ -183,7 +184,7 @@ def plot_accuracy_per_epoch(cached_acc, save_path = None):
 #Define plots kai dataset
 import os
 DO_PLOTS = True     # ή False
-DATASET = "lung"
+DATASET = "ics3d"
 SAVE_DIR = "experiment_results/" + DATASET
 os.makedirs(SAVE_DIR, exist_ok=True)
 
@@ -260,6 +261,46 @@ def load_dataset(name):
         imputer = SimpleImputer(strategy="median")
         X = imputer.fit_transform(X_df)
 
+        return X, y
+    elif name == "ics3d":
+        ics_dat = ics3d_data.ICS3D()
+        df = ics_dat.get_dataset()
+
+        target_col = "Attack_label"
+
+        # sample πρώτα για να μη σκάει
+        df = df.sample(8000, random_state=42)
+
+        # αφαιρούμε target και multiclass label
+        drop_cols = [target_col, "Attack_type"]
+
+        # high-cardinality / text-like columns που εκτοξεύουν το one-hot
+        heavy_cols = [
+            "ip.src_host", "ip.dst_host",
+            "arp.dst.proto_ipv4", "arp.src.proto_ipv4",
+            "http.file_data", "http.request.uri.query",
+            "http.referer", "http.request.full_uri",
+            "tcp.options", "tcp.payload",
+            "dns.qry.name",
+            "mqtt.msg_decoded_as", "mqtt.msg",
+            "mqtt.protoname", "mqtt.topic"
+        ]
+
+        cols_to_drop = [c for c in drop_cols + heavy_cols if c in df.columns]
+
+        y = df[target_col].values
+        X_df = df.drop(columns=cols_to_drop)
+
+        # categorical columns
+        cat_cols = X_df.select_dtypes(include=["object"]).columns.tolist()
+        X_df = pd.get_dummies(X_df, columns=cat_cols, drop_first=True)
+
+        # numeric conversion
+        X_df = X_df.apply(pd.to_numeric, errors="coerce")
+
+        imputer = SimpleImputer(strategy="median")
+        X = imputer.fit_transform(X_df)
+        print("Dataset loaded")
         return X, y
     else:
         raise ValueError("Unknown dataset")
