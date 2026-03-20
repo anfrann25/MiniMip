@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67cd7056-33f2-4eb5-90c7-58a233b20f5c" name="Changes" comment="Setting up Statistical Models">
-      <change afterPath="$PROJECT_DIR$/library/under_development/stat_models/federated_Statistical.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/AutomateTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/AutomateTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats/mean/aggregation_counts.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats/mean/estimate_history.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats/mean/execution_times.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats/variance/aggregation_counts.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats/variance/estimate_history.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats/variance/execution_times.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats_compare/variance/aggregation_counts_compare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats_compare/variance/estimate_history_compare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats_compare/variance/execution_times_compare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats_compare/variance/model_aggregation_comparison.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats_compare/variance/model_execution_time_comparison.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats_compare/variance/model_final_value_comparison.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/experiment_results/federated_stats_compare/variance/model_history_comparison.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
