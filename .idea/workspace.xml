@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67cd7056-33f2-4eb5-90c7-58a233b20f5c" name="Changes" comment="Setting up Statistical Models">
-      <change afterPath="$PROJECT_DIR$/library/under_development/stat_models/stats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/datasets/csec_iot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/accuracy_comparison.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/accuracy_per_epoch.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/execution_time.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/final_accuracy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/under_development/stat_models/federated_Statistical.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/under_development/stat_models/federated_cachedStatistical.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/under_development/stat_models/federated_cachedStatistical.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/AutomateTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/AutomateTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/AutomateTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/AutomateTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/client3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/clients.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/clients.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
