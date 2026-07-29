@@ -5,30 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67cd7056-33f2-4eb5-90c7-58a233b20f5c" name="Changes" comment="Setting up Statistical Models">
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/sweep_sensitivity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/under_development/stat_models/federated_logreg_cached.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/under_development/stat_models/federated_logreg_cached.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/AutomateTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/AutomateTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/accuracy_comparison.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/accuracy_comparison.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/accuracy_per_epoch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/accuracy_per_epoch.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/communication_timeline.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/communication_timeline.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/communication_timeline_paper.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/communication_timeline_paper.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/execution_time.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/execution_time.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/final_accuracy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/heart/final_accuracy.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/accuracy_comparison.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/accuracy_comparison.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/accuracy_per_epoch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/accuracy_per_epoch.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/communication_timeline.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/communication_timeline.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/communication_timeline_paper.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/communication_timeline_paper.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/execution_time.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/execution_time.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/final_accuracy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/ics3d/final_accuracy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/lung/communication_timeline.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/lung/communication_timeline.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/lung/communication_timeline_paper.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/lung/communication_timeline_paper.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/lung/execution_time.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/lung/execution_time.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/smoking/accuracy_comparison.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/smoking/accuracy_comparison.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/smoking/accuracy_per_epoch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/smoking/accuracy_per_epoch.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/smoking/execution_time.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/smoking/execution_time.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/smoking/final_accuracy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/smoking/final_accuracy.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/water/accuracy_comparison.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/water/accuracy_comparison.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/water/accuracy_per_epoch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/water/accuracy_per_epoch.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/water/communication_timeline.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/water/communication_timeline.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/water/communication_timeline_paper.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/water/communication_timeline_paper.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/water/execution_time.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/logistic_regression/experiment_results/water/execution_time.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/AutomateTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_and_experiments/experiments/paper/statistical_models/AutomateTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +172,7 @@
       <recent name="D:\Coding\MiniMip_Grizzly\tests_and_experiments\core" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sweep_sensitivity">
+  <component name="RunManager" selected="Python.AutomateTest (1)">
     <configuration name="AutomateTest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MiniMip" />
       <option name="ENV_FILES" value="" />
@@ -288,8 +285,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sweep_sensitivity" />
         <item itemvalue="Python.AutomateTest (1)" />
+        <item itemvalue="Python.sweep_sensitivity" />
         <item itemvalue="Python.AutomateTest" />
         <item itemvalue="Python.client3" />
         <item itemvalue="Python.client2" />
