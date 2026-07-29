@@ -15,11 +15,11 @@ class FederatedLogisticRegressionClientCached(StatisticalModel):
         self,
         client: AggregationClientInterface,
         aggregation_interval=3,     # μπορείς να το κρατήσεις ως "fallback"
-        warmup_rounds=5,
-        tau_max=10,                 # max epochs που επιτρέπεις να μείνει stale το cached global
-        eps_w=1e-3,                 # variation-gap threshold (Sancus Def.4 analog)
-        mix_local=0.7,              # πόσο κρατάς local
-        mix_cached=0.3,             # πόσο τραβάς προς cached global
+        warmup_rounds=2,
+        tau_max=20,                 # max epochs που επιτρέπεις να μείνει stale το cached global
+        eps_w= 0.1,                 # variation-gap threshold (Sancus Def.4 analog)
+        mix_local=0.7,              # local
+        mix_cached=0.3,             # cached global
         model_params=None
 
     ):
@@ -35,6 +35,7 @@ class FederatedLogisticRegressionClientCached(StatisticalModel):
         self.eps_w = eps_w
         self.mix_local = mix_local
         self.mix_cached = mix_cached
+        self.communication_log = []  # Καταγραφή: "FULL" ή "EMPTY"
 
         self.accuracy_history = []
         self.model_params = model_params or {
@@ -131,6 +132,7 @@ class FederatedLogisticRegressionClientCached(StatisticalModel):
             if self._should_aggregate():
                 global_coef = self.agg.fed_weighted_avg(self.model.coef_, X.shape[0])
                 global_intercept = self.agg.fed_weighted_avg(self.model.intercept_, X.shape[0])
+                self.communication_log.append("FULL_UPDATE")
 
                 # update cache + apply
                 self._update_cache(global_coef, global_intercept)
@@ -139,6 +141,7 @@ class FederatedLogisticRegressionClientCached(StatisticalModel):
                 did_aggregate = True
             else:
                 self._mix_with_cached()
+                self.communication_log.append("EMPTY_UPDATE")
 
             self.did_aggregate_history.append(did_aggregate)
 

@@ -19,8 +19,7 @@ SAVE_DIR = f"experiment_results/federated_stats_compare/{METRIC}"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 
-# -------------------- dataset --------------------
-
+# Data
 def make_client_data(client_id: int, n_samples=200000):
     rng = np.random.default_rng(42 * (client_id + 1))
 
@@ -30,8 +29,8 @@ def make_client_data(client_id: int, n_samples=200000):
     return x, y
 
 
-# -------------------- plots --------------------
 
+#plots
 def plot_model_execution_time_comparison(cached_results, nocache_results, save_path=None):
     model_names = ["cached", "no_cache"]
     values = [
@@ -187,16 +186,15 @@ def plot_model_history_comparison(metric_name, cached_histories, nocache_histori
         plt.show()
 
 
-# -------------------- server --------------------
 
+#kopia server.py
 def start_server(available_clients):
     print("Starting asyncio server...")
     import asyncio
     asyncio.run(serve(available_clients=available_clients))
 
 
-# -------------------- client runner --------------------
-
+#client
 def build_model(mode, client):
     if mode == "cached":
         return FederatedStatsClientCached(
@@ -281,8 +279,7 @@ def run_client(
     print(f"[{mode}][Client {client_id}] aggregations={int(sum(filtered_agg_flags))}/{len(filtered_agg_flags)}")
 
 
-# -------------------- experiment group --------------------
-
+#run client analoga to montelo
 def run_metric_group(mode, metric_name, client_ids):
     manager = Manager()
 
@@ -316,8 +313,7 @@ def run_metric_group(mode, metric_name, client_ids):
     return dict(results), dict(histories), dict(finals), dict(agg_counts)
 
 
-# -------------------- summaries --------------------
-
+#prints etcs
 def print_summary(mode, metric_name, results, finals, agg_counts):
     print(f"\n=== SUMMARY FOR {metric_name.upper()} | MODE={mode.upper()} ===")
     print("Execution times:", results)
@@ -378,8 +374,7 @@ def print_comparison(metric_name, cached_results, cached_finals, cached_agg,
         print(f"Intercept abs diff: {abs(np.mean(cached_intercepts) - np.mean(nocache_intercepts)):.6f}")
 
 
-# -------------------- main --------------------
-
+#main apothikeuei apotelesmata kai trexei montela
 if __name__ == "__main__":
     client_ids = [0, 1, 2]
 
