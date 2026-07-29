@@ -151,17 +151,6 @@ w_next = η_local · w_local + η_cached · w_cached
 
 ---
 
-## 🚀 Compile της εργασίας (LaTeX)
-
-```bash
-xelatex thesis.tex
-bibtex thesis.aux
-xelatex thesis.tex
-xelatex thesis.tex
-```
-
----
-
 ## 🔬 Software Stack
 
 - **Python 3.x**
@@ -195,17 +184,3 @@ xelatex thesis.tex
 - Li et al., *FedProx: Federated Optimization in Heterogeneous Networks*
 - Peng et al., *SANCUS: Staleness-Aware Communication-Avoiding Full-Graph Decentralized Training*
 - Defazio et al., *SAGA: A Fast Incremental Gradient Method*
-
-(Πλήρης λίστα στο `references.bib`)
-
----
-
-## 👤 Συγγραφέας
-
-**Ανδρέας Συμεών Φραντζής**
-Πτυχιακή Εργασία — ΕΚΠΑ, Φεβρουάριος 2026
-Επιβλέποντες: Γιάννης Ιωαννίδης, Μαΐλης Θεόφιλος
-
-## 📄 Άδεια χρήσης
-
-Προσάρμοσε ανάλογα με την πολιτική του τμήματος/ιδρύματός σου (π.χ. MIT για τον κώδικα, αναφορά στη σχολή για το κείμενο).
