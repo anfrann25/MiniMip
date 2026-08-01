@@ -15,11 +15,11 @@ class FederatedLogisticRegressionClientCached(StatisticalModel):
         self,
         client: AggregationClientInterface,
         aggregation_interval=3,     # μπορείς να το κρατήσεις ως "fallback"
-        warmup_rounds=2,
-        tau_max=40,                 # max epochs που επιτρέπεις να μείνει stale το cached global
-        eps_w= 0.3,                 # variation-gap threshold (Sancus Def.4 analog)
-        mix_local=0.5,              # local
-        mix_cached=0.5,             # cached global
+        warmup_rounds=5,
+        tau_max=10,                 # max epochs που επιτρέπεις να μείνει stale το cached global
+        eps_w= 0.05,                 # variation-gap threshold (Sancus Def.4 analog)
+        mix_local=0.85,              # local
+        mix_cached=0.15,             # cached global
         model_params=None
 
     ):
